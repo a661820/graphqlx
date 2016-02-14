@@ -27,8 +27,8 @@ app.post('/graphql', (req, res) => {
 // 127.0.0.1
 // 192.168.4.12
 let server = app.listen({
-  port: PORT,
-  host: '192.168.4.12'
+  port: PORT
+  // , host: '192.168.4.12'
 }, function() {
   var host = server.address().address;
   var port = server.address().port;
