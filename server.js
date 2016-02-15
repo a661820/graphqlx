@@ -13,7 +13,7 @@ app.use(bodyParser.text({
 }));
 
 app.post('/graphql/hello', (req, res) => {
-  res.send('\nHello! Many greetings from GraphQL!\nAdam\n\n');
+  res.send('\nHello! Many greetings from GraphQL!\nAdam\n\n'+server.address().address+'\n\n');
 });
 
 app.post('/graphql', (req, res) => {
